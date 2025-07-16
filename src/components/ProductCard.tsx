@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMenu } from 'react-icons/fi'; // Feather Icons — hamburger menu
+import { FiMenu } from 'react-icons/fi'; 
 
 interface ProductCardProps {
   image?: string;
@@ -14,6 +14,7 @@ export function ProductCard({ image = '', name = '', price = '' }: ProductCardPr
       <img
         src={image}
         // alt intentionally left out
+        // alt="product image"
         style={{ width: '150px', marginBottom: '1rem' }}
       />
 
@@ -22,6 +23,7 @@ export function ProductCard({ image = '', name = '', price = '' }: ProductCardPr
 
      {/* ❌ Icon-only button without aria-label */}
       <button
+      // aria-label="Open menu"
         style={{
           padding: '10px',
           backgroundColor: '#007bff',
