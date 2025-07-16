@@ -8,7 +8,7 @@ export default {
 
 export const Default = () => (
   <ProductCard
-    image="https://via.placeholder.com/150"
+    image="/wallet.jpg"
     name="Black Leather Wallet"
     price="$29.99"
   />
